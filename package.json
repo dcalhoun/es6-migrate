@@ -1,0 +1,48 @@
+{
+  "name": "es6-convert",
+  "version": "0.0.1",
+  "description": "Convert CoffeeScript to ES6 and fix StandardJS violations.",
+  "main": "index.js",
+  "files": [
+    "dist",
+    "LICENSE.md"
+  ],
+  "scripts": {
+    "build": "babel lib -d dist",
+    "lint": "standard lib/**/*.js test/**/*.js",
+    "release": "npm run build && npm publish",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/HealthTeacher/es6-convert.git"
+  },
+  "keywords": [
+    "convert",
+    "conversion",
+    "migrate",
+    "migration",
+    "coffeescript",
+    "javascript",
+    "es6",
+    "standardjs",
+    "standard",
+    "cli"
+  ],
+  "author": "David Calhoun",
+  "bin": {
+    "es6Convert": "./bin/es6-convert.js"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/HealthTeacher/es6-convert/issues"
+  },
+  "homepage": "https://github.com/HealthTeacher/es6-convert#readme",
+  "dependencies": {
+    "espresso-transformer": "^1.4.5",
+    "standard": "^8.5.0"
+  },
+  "standard": {
+    "parser": "babel-eslint"
+  }
+}
