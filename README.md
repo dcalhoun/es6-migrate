@@ -7,13 +7,28 @@ Convert CoffeeScript to ES6 and fix StandardJS violations.
 ## Installation
 
 ```bash
-npm install --dev es6-migrate
+npm install es6-migrate
 ```
 
 ## Usage
-
 ```bash
-convert [file]
+es6Migrate path/to/file.coffee
+```
+
+### Options
+#### `files`
+String path to file or directory of files to migrate.
+
+###### Accepted Values
+- `{String}`
+
+###### Examples
+```javascript
+// Example: Single file
+es6Migrate ./src/scripts/index.coffee
+
+// Example: Directory of files
+es6Migrate ./src/scripts/feature/
 ```
 
 ## Testing
