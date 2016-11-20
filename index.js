@@ -1,3 +1,3 @@
-var es6Convert = require('./lib/es6-convert')
+var es6Migrate = require('./lib/es6-migrate')
 
-module.exports = es6Convert
+module.exports = es6Migrate

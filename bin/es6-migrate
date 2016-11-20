@@ -1,0 +1,5 @@
+#!/usr/bin/env node
+
+var es6Migrate = require('..')
+
+es6Migrate()
