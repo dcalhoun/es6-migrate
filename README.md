@@ -23,7 +23,7 @@ String path to file or directory of files to migrate.
 - `{String}`
 
 ###### Examples
-```javascript
+```bash
 // Example: Single file
 es6Migrate ./src/scripts/index.coffee
 
