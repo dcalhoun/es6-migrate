@@ -2,11 +2,29 @@
 # yarn lockfile v1
 
 
+abbrev@1:
+  version "1.0.9"
+  resolved "https://registry.yarnpkg.com/abbrev/-/abbrev-1.0.9.tgz#91b4792588a7738c25f35dd6f63752a2f8776135"
+
+acorn-jsx@^2.0.0:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/acorn-jsx/-/acorn-jsx-2.0.1.tgz#0edf9878a5866bca625f52955a1ed9e7d8c5117e"
+  dependencies:
+    acorn "^2.0.1"
+
 acorn-jsx@^3.0.0, acorn-jsx@^3.0.1:
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/acorn-jsx/-/acorn-jsx-3.0.1.tgz#afdf9488fb1ecefc8348f6fb22f464e32a58b36b"
   dependencies:
     acorn "^3.0.4"
+
+acorn@^1.0.3:
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/acorn/-/acorn-1.2.2.tgz#c8ce27de0acc76d896d2b1fad3df588d9e82f014"
+
+acorn@^2.0.1:
+  version "2.7.0"
+  resolved "https://registry.yarnpkg.com/acorn/-/acorn-2.7.0.tgz#ab6e7d9d886aaca8b085bc3312b79a198433f0e7"
 
 acorn@^3.0.4, acorn@^3.1.0:
   version "3.3.0"
@@ -40,6 +58,17 @@ alter@~0.2.0:
   resolved "https://registry.yarnpkg.com/alter/-/alter-0.2.0.tgz#c7588808617572034aae62480af26b1d4d1cb3cd"
   dependencies:
     stable "~0.1.3"
+
+amd-to-es6@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/amd-to-es6/-/amd-to-es6-0.1.0.tgz#ed0004cd16dbfbf2f32437576ab5205c1c727226"
+  dependencies:
+    acorn-jsx "^2.0.0"
+    commander "^2.4.0"
+    falafel "~1.2.0"
+    glob "^4.0.6"
+    js-beautify "~1.5.1"
+    mkdirp "^0.5.0"
 
 amdefine@>=0.0.4:
   version "1.0.1"
@@ -925,7 +954,7 @@ colors@>=0.6.2, colors@^1.1.2:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/colors/-/colors-1.1.2.tgz#168a4701756b6a7f51a12ce0c97bfa28c084ed63"
 
-commander@^2.5.0:
+commander@^2.4.0, commander@^2.5.0:
   version "2.9.0"
   resolved "https://registry.yarnpkg.com/commander/-/commander-2.9.0.tgz#9c99094176e12240cb22d6c5146098400fe0f7d4"
   dependencies:
@@ -956,6 +985,13 @@ concat-stream@^1.4.6:
     inherits "~2.0.1"
     readable-stream "~2.0.0"
     typedarray "~0.0.5"
+
+config-chain@~1.1.5:
+  version "1.1.11"
+  resolved "https://registry.yarnpkg.com/config-chain/-/config-chain-1.1.11.tgz#aba09747dfbe4c3e70e766a6e41586e1859fc6f2"
+  dependencies:
+    ini "^1.3.4"
+    proto-list "~1.2.1"
 
 convert-source-map@^1.1.0:
   version "1.3.0"
@@ -1273,6 +1309,15 @@ extglob@^0.3.1:
   dependencies:
     is-extglob "^1.0.0"
 
+falafel@~1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/falafel/-/falafel-1.2.0.tgz#c18d24ef5091174a497f318cd24b026a25cddab4"
+  dependencies:
+    acorn "^1.0.3"
+    foreach "^2.0.5"
+    isarray "0.0.1"
+    object-keys "^1.0.6"
+
 fast-levenshtein@~2.0.4:
   version "2.0.5"
   resolved "https://registry.yarnpkg.com/fast-levenshtein/-/fast-levenshtein-2.0.5.tgz#bd33145744519ab1c36c3ee9f31f08e9079b67f2"
@@ -1336,6 +1381,10 @@ for-own@^0.1.4:
   dependencies:
     for-in "^0.1.5"
 
+foreach@^2.0.5:
+  version "2.0.5"
+  resolved "https://registry.yarnpkg.com/foreach/-/foreach-2.0.5.tgz#0bee005018aeb260d0a3af3ae658dd0136ec1b99"
+
 fs-readdir-recursive@^0.1.0:
   version "0.1.2"
   resolved "https://registry.yarnpkg.com/fs-readdir-recursive/-/fs-readdir-recursive-0.1.2.tgz#315b4fb8c1ca5b8c47defef319d073dad3568059"
@@ -1374,6 +1423,15 @@ glob-parent@^2.0.0:
   resolved "https://registry.yarnpkg.com/glob-parent/-/glob-parent-2.0.0.tgz#81383d72db054fcccf5336daa902f182f6edbb28"
   dependencies:
     is-glob "^2.0.0"
+
+glob@^4.0.6:
+  version "4.5.3"
+  resolved "https://registry.yarnpkg.com/glob/-/glob-4.5.3.tgz#c6cb73d3226c1efef04de3c56d012f03377ee15f"
+  dependencies:
+    inflight "^1.0.4"
+    inherits "2"
+    minimatch "^2.0.1"
+    once "^1.3.0"
 
 glob@^5.0.15:
   version "5.0.15"
@@ -1469,6 +1527,10 @@ inflight@^1.0.4:
 inherits@2, inherits@~2.0.1:
   version "2.0.3"
   resolved "https://registry.yarnpkg.com/inherits/-/inherits-2.0.3.tgz#633c2c83e3da42a502f52466022480f4208261de"
+
+ini@^1.3.4:
+  version "1.3.4"
+  resolved "https://registry.yarnpkg.com/ini/-/ini-1.3.4.tgz#0537cb79daf59b59a1a517dff706c86ec039162e"
 
 inquirer@^0.12.0:
   version "0.12.0"
@@ -1597,6 +1659,10 @@ is-resolvable@^1.0.0:
   dependencies:
     tryit "^1.0.1"
 
+isarray@0.0.1:
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/isarray/-/isarray-0.0.1.tgz#8a18acfca9a8f4177e09abfc6038939b05d1eedf"
+
 isarray@1.0.0, isarray@^1.0.0, isarray@~1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/isarray/-/isarray-1.0.0.tgz#bb935d48582cba168c06834957a54a3e07124f11"
@@ -1606,6 +1672,14 @@ isobject@^2.0.0:
   resolved "https://registry.yarnpkg.com/isobject/-/isobject-2.1.0.tgz#f065561096a3f1da2ef46272f815c840d87e0c89"
   dependencies:
     isarray "1.0.0"
+
+js-beautify@~1.5.1:
+  version "1.5.10"
+  resolved "https://registry.yarnpkg.com/js-beautify/-/js-beautify-1.5.10.tgz#4d95371702699344a516ca26bf59f0a27bb75719"
+  dependencies:
+    config-chain "~1.1.5"
+    mkdirp "~0.5.0"
+    nopt "~3.0.1"
 
 js-tokens@1.0.1:
   version "1.0.1"
@@ -1754,7 +1828,7 @@ micromatch@^2.3.7:
   dependencies:
     brace-expansion "^1.0.0"
 
-minimatch@^2.0.3:
+minimatch@^2.0.1, minimatch@^2.0.3:
   version "2.0.10"
   resolved "https://registry.yarnpkg.com/minimatch/-/minimatch-2.0.10.tgz#8d087c39c6b38c001b97fca7ce6d0e1e80afbac7"
   dependencies:
@@ -1768,7 +1842,7 @@ minimist@>=0.2.0, minimist@^1.1.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/minimist/-/minimist-1.2.0.tgz#a35008b20f41383eec1fb914f4cd5df79a264284"
 
-mkdirp@^0.5.0, mkdirp@^0.5.1:
+mkdirp@^0.5.0, mkdirp@^0.5.1, mkdirp@~0.5.0:
   version "0.5.1"
   resolved "https://registry.yarnpkg.com/mkdirp/-/mkdirp-0.5.1.tgz#30057438eac6cf7f8c4767f38648d6697d75c903"
   dependencies:
@@ -1797,6 +1871,12 @@ nomnom@^1.8.1:
     chalk "~0.4.0"
     underscore "~1.6.0"
 
+nopt@~3.0.1:
+  version "3.0.6"
+  resolved "https://registry.yarnpkg.com/nopt/-/nopt-3.0.6.tgz#c6465dbf08abcd4db359317f79ac68a646b28ff9"
+  dependencies:
+    abbrev "1"
+
 normalize-path@^2.0.1:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/normalize-path/-/normalize-path-2.0.1.tgz#47886ac1662760d4261b7d979d241709d3ce3f7a"
@@ -1808,6 +1888,10 @@ number-is-nan@^1.0.0:
 object-assign@^4.0.1, object-assign@^4.1.0:
   version "4.1.0"
   resolved "https://registry.yarnpkg.com/object-assign/-/object-assign-4.1.0.tgz#7a3b3d0e98063d43f4c03f2e8ae6cd51a86883a0"
+
+object-keys@^1.0.6:
+  version "1.0.11"
+  resolved "https://registry.yarnpkg.com/object-keys/-/object-keys-1.0.11.tgz#c54601778ad560f1142ce0e01bcca8b56d13426d"
 
 object.omit@^2.0.0:
   version "2.0.1"
@@ -1925,6 +2009,10 @@ process-nextick-args@~1.0.6:
 progress@^1.1.8:
   version "1.1.8"
   resolved "https://registry.yarnpkg.com/progress/-/progress-1.1.8.tgz#e260c78f6161cdd9b0e56cc3e0a85de17c7a57be"
+
+proto-list@~1.2.1:
+  version "1.2.4"
+  resolved "https://registry.yarnpkg.com/proto-list/-/proto-list-1.2.4.tgz#212d5bfe1318306a420f6402b8e26ff39647a849"
 
 q@^1.1.2:
   version "1.4.1"
