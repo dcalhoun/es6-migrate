@@ -12,15 +12,15 @@ npm install es6-migrate
 
 ## Usage
 ```bash
-es6Migrate path/to/file.coffee
+es6Migrate <files>
 ```
 
 ### Options
 #### `files`
-String path to file or directory of files to migrate.
+Array of files to migrate.
 
 ###### Accepted Values
-- `{String}`
+- `{Array}`
 
 ###### Examples
 ```bash
@@ -28,7 +28,7 @@ String path to file or directory of files to migrate.
 es6Migrate ./src/scripts/index.coffee
 
 // Example: Directory of files
-es6Migrate ./src/scripts/feature/
+es6Migrate ./src/scripts/**/*.coffee
 ```
 
 ## Testing
