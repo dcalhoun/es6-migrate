@@ -1,5 +1,6 @@
 #! /usr/bin/env node
 
-var es6Migrate = require('../dist/es6-migrate.js')
+var ES6Migrate = require('../dist/es6-migrate.js')
 
-es6Migrate()
+var files = process.argv.splice(2)
+new ES6Migrate().migrate(files)
