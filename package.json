@@ -2,16 +2,17 @@
   "name": "es6-migrate",
   "version": "0.0.1",
   "description": "Convert CoffeeScript to ES6 and fix StandardJS violations.",
-  "main": "index.js",
+  "main": "dist/es6-migrate.js",
   "files": [
     "bin",
-    "lib",
+    "dist",
     "LICENSE.md"
   ],
   "scripts": {
     "build": "babel lib -d dist",
     "lint": "standard lib/**/*.js test/**/*.js",
     "release": "npm run build && npm publish",
+    "start": "babel lib -d dist -w",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -43,5 +44,8 @@
     "amd-to-es6": "^0.1.0",
     "espresso-transformer": "^1.4.5",
     "standard": "^8.5.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.18.0"
   }
 }

@@ -1,5 +1,5 @@
 #!/usr/bin/env node
 
-var es6Migrate = require('..')
+var es6Migrate = require('../dist/es6-migrate.js')
 
 es6Migrate()
