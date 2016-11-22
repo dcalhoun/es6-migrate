@@ -28,10 +28,10 @@ Array of files to migrate.
 
 ###### Examples
 ```bash
-// Example: Single file
+# Example: Single file
 es6Migrate ./src/scripts/index.coffee
 
-// Example: Directory of files
+# Example: Directory of files
 es6Migrate ./src/scripts/**/*.coffee
 ```
 
