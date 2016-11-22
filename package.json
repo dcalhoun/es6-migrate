@@ -9,10 +9,10 @@
     "LICENSE.md"
   ],
   "scripts": {
-    "build": "babel lib -d dist --ignore test.js",
-    "lint": "standard lib/**/*.js test/**/*.js",
+    "build": "babel lib -d dist --ignore __mocks__,__tests__",
+    "lint": "standard lib/**/*.js",
     "release": "npm run build && npm publish",
-    "start": "babel lib -d dist -w --ignore test.js",
+    "start": "babel lib -d dist -w --ignore __mocks__,__tests__",
     "test": "jest",
     "test:watch": "jest --watch"
   },
@@ -48,12 +48,19 @@
   },
   "devDependencies": {
     "babel-cli": "^6.18.0",
+    "babel-jest": "^17.0.2",
     "jest": "^17.0.3"
   },
   "standard": {
     "globals": [
+      "after",
+      "afterEach",
+      "before",
+      "beforeEach",
+      "describe",
       "expect",
-      "it"
+      "it",
+      "jest"
     ]
   }
 }
