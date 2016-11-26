@@ -10,16 +10,8 @@ var opts = nomnom
     default: '.js',
     help: 'Extension used when writing converted file.'
   })
-  .option('match', {
-    abbr: 'm',
-    default: '.coffee',
-    help: 'Extension used to filter files.'
-  })
   .parse()
 
-var files = opts['_'].filter((file) => {
-  var regExp = new RegExp(`${opts.match}$`)
-  return regExp.test(file)
-})
+var files = opts['_']
 
 new ES6Migrate(opts).migrate(files)
