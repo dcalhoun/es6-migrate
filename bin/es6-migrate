@@ -1,6 +1,25 @@
 #! /usr/bin/env node
 
+var nomnom = require('nomnom')
+
 var ES6Migrate = require('../dist/es6-migrate.js')
 
-var files = process.argv.splice(2)
-new ES6Migrate().migrate(files)
+var opts = nomnom
+  .option('extension', {
+    abbr: 'e',
+    default: '.js',
+    help: 'Extension used when writing converted file.'
+  })
+  .option('match', {
+    abbr: 'm',
+    default: '.coffee',
+    help: 'Extension used to filter files.'
+  })
+  .parse()
+
+var files = opts['_'].filter((file) => {
+  var regExp = new RegExp(`${opts.match}$`)
+  return regExp.test(file)
+})
+
+new ES6Migrate(opts).migrate(files)
