@@ -44,6 +44,7 @@
   "dependencies": {
     "amd-to-es6": "^0.1.0",
     "espresso-transformer": "^1.4.5",
+    "node-progress-bars": "^1.0.0",
     "nomnom": "^1.8.1",
     "standard": "^8.5.0"
   },
