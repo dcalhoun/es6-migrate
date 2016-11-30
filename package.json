@@ -63,8 +63,13 @@
       "beforeEach",
       "describe",
       "expect",
+      "fdescribe",
+      "fit",
       "it",
-      "jest"
+      "jasmine",
+      "jest",
+      "xdescribe",
+      "xit"
     ]
   }
 }

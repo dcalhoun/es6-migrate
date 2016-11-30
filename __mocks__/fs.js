@@ -1,6 +1,6 @@
 let fs = jest.genMockFromModule('fs')
 
-fs.readFile = jest.fn((file, cb) => {
+fs.readFile = jest.fn((file, encoding, cb) => {
   cb(undefined, `Text content for ${file}.`)
 })
 

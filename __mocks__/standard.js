@@ -1,7 +1,7 @@
 let standard = {}
 
-standard.lintFiles = jest.fn((files, opts, cb) => {
-  cb()
+standard.lintText = jest.fn((file, opts, cb) => {
+  cb(undefined, 'Foo')
 })
 
 module.exports = standard
