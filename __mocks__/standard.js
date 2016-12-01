@@ -1,7 +1,11 @@
 let standard = {}
 
 standard.lintText = jest.fn((file, opts, cb) => {
-  cb(undefined, 'Foo')
+  const data = {
+    results: [{ output: 'Foo' }]
+  }
+
+  cb(undefined, data)
 })
 
 module.exports = standard
