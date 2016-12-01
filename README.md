@@ -11,7 +11,7 @@ Convert AMD CoffeeScript to ES6 JavaScript. Tasks performed:
 ## Installation
 
 ```bash
-npm install es6-migrate
+$ npm install es6-migrate
 ```
 
 ## Usage
