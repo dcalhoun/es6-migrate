@@ -42,8 +42,7 @@
   },
   "homepage": "https://github.com/dcalhoun/es6-migrate#readme",
   "dependencies": {
-    "@buxlabs/amd-to-es6": "^0.8.1",
-    "amd-to-es6": "^0.1.0",
+    "@buxlabs/amd-to-es6": "^0.8.2",
     "decaffeinate": "^2.50.19",
     "espresso-transformer": "^1.4.5",
     "nomnom": "^1.8.1",
