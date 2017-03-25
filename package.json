@@ -13,8 +13,7 @@
     "lint": "standard lib/**/*.js",
     "release": "yarn install && npm run build && npm publish",
     "start": "babel lib -d dist -w --ignore __mocks__,__tests__",
-    "test": "jest",
-    "test:watch": "jest --watch"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
