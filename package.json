@@ -11,7 +11,7 @@
   "scripts": {
     "build": "babel lib -d dist --ignore __mocks__,__tests__",
     "lint": "standard lib/**/*.js",
-    "release": "yarn install && npm run build && npm publish",
+    "release": "yarn install && yarn run build && yarn publish",
     "start": "babel lib -d dist -w --ignore __mocks__,__tests__",
     "test": "jest"
   },
