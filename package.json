@@ -45,7 +45,7 @@
     "decaffeinate": "^2.50.19",
     "espresso-transformer": "^1.4.5",
     "nomnom": "^1.8.1",
-    "standard": "^9.0.2"
+    "standard": "^10.0.1"
   },
   "devDependencies": {
     "babel-cli": "^6.18.0",
