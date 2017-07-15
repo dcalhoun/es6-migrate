@@ -1,5 +1,5 @@
 # es6-migrate
-[![JavaScript Style Guide](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
+[![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 [![Build Status](https://travis-ci.org/dcalhoun/es6-migrate.svg?branch=master)](https://travis-ci.org/dcalhoun/es6-migrate)
 
 Convert AMD CoffeeScript to ES6 JavaScript. Tasks performed:
