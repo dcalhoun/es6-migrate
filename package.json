@@ -50,7 +50,7 @@
   "devDependencies": {
     "babel-cli": "^6.18.0",
     "babel-jest": "^20.0.0",
-    "jest": "^20.0.0"
+    "jest": "^21.0.0"
   },
   "standard": {
     "globals": [
