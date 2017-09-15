@@ -1,6 +1,6 @@
 {
   "name": "es6-migrate",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Convert CoffeeScript to ES6 and fix StandardJS violations.",
   "main": "dist/es6-migrate.js",
   "files": [
