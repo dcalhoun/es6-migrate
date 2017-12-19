@@ -51,7 +51,7 @@
     "babel-cli": "^6.26.0",
     "babel-jest": "^22.0.1",
     "babel-preset-env": "^1.6.0",
-    "jest": "^21.1.0"
+    "jest": "^22.0.0"
   },
   "standard": {
     "globals": [
