@@ -44,7 +44,7 @@
     "@buxlabs/amd-to-es6": "^0.12.2",
     "decaffeinate": "^4.0.0",
     "espresso-transformer": "^1.4.5",
-    "nomnom": "^2.0.0",
+    "nomnom": "^1.8.1",
     "standard": "^11.0.0"
   },
   "devDependencies": {
