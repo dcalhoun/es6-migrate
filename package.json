@@ -42,14 +42,14 @@
   "homepage": "https://github.com/dcalhoun/es6-migrate#readme",
   "dependencies": {
     "@buxlabs/amd-to-es6": "^0.13.3",
-    "decaffeinate": "^4.0.0",
+    "decaffeinate": "^5.1.12",
     "espresso-transformer": "^1.4.5",
     "nomnom": "^1.8.1",
     "standard": "^11.0.0"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
-    "babel-jest": "^22.0.1",
+    "babel-jest": "^23.0.1",
     "babel-preset-env": "^1.6.0",
     "jest": "^22.0.0"
   },
